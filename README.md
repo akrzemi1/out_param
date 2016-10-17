@@ -24,6 +24,9 @@ assign(out(s), "text");
 
 This forces the function callers to be explicit about passing output arguments to it.
 
+## Recommendation
+Before using this library for output parameters consider not using output parameters at all, as described in C++ Core Guidelines [F.20](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-out) and [F.21](http://isocpp.github.io/CppCoreGuidelines/CppCoreGuidelines#Rf-out-multi). Only if this is impossible resort to using this library to make the usage of output parameters explicit in the call site.
+
 ## installation
 It is a C++11 single-header (header-only) library.
 
